@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1072617552128",
+    "project_id": "hygiene-recruitment-cck397",
+    "storage_bucket": "hygiene-recruitment-cck397.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1072617552128:android:c58f31fb12cdf75e409be5",
+        "android_client_info": {
+          "package_name": "com.mycompany.jobconnect"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDw10HUqUGm7F93WZxXrD60_GHrs9XRh4g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

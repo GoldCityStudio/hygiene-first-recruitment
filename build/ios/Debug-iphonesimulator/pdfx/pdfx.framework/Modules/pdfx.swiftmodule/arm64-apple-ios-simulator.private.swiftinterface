@@ -1,0 +1,28 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name pdfx
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
+import CoreGraphics
+import Flutter
+import Foundation
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_exported import pdfx
+@objc @_hasMissingDesignatedInitializers public class SwiftPdfxPlugin : ObjectiveC.NSObject, Flutter.FlutterPlugin, pdfx.PdfxApi {
+  @objc public static func register(with registrar: any Flutter.FlutterPluginRegistrar)
+  @objc public func openDocumentDataMessage(_ message: pdfx.OpenDataMessage, completion: @escaping (pdfx.OpenReply?, Flutter.FlutterError?) -> Swift.Void)
+  @objc public func openDocumentFileMessage(_ message: pdfx.OpenPathMessage, completion: @escaping (pdfx.OpenReply?, Flutter.FlutterError?) -> Swift.Void)
+  @objc public func openDocumentAssetMessage(_ message: pdfx.OpenPathMessage, completion: @escaping (pdfx.OpenReply?, Flutter.FlutterError?) -> Swift.Void)
+  @objc public func closeDocumentMessage(_ message: pdfx.IdMessage, error: Swift.AutoreleasingUnsafeMutablePointer<Flutter.FlutterError?>)
+  @objc public func getPageMessage(_ message: pdfx.GetPageMessage, completion: @escaping (pdfx.GetPageReply?, Flutter.FlutterError?) -> Swift.Void)
+  @objc public func renderPageMessage(_ message: pdfx.RenderPageMessage, completion: @escaping (pdfx.RenderPageReply?, Flutter.FlutterError?) -> Swift.Void)
+  @objc public func closePageMessage(_ message: pdfx.IdMessage, error: Swift.AutoreleasingUnsafeMutablePointer<Flutter.FlutterError?>)
+  @objc public func registerTextureWithError(_ error: Swift.AutoreleasingUnsafeMutablePointer<Flutter.FlutterError?>) -> pdfx.RegisterTextureReply?
+  @objc public func unregisterTextureMessage(_ message: pdfx.UnregisterTextureMessage, error: Swift.AutoreleasingUnsafeMutablePointer<Flutter.FlutterError?>)
+  @objc public func resizeTextureMessage(_ message: pdfx.ResizeTextureMessage, completion: @escaping (Flutter.FlutterError?) -> Swift.Void)
+  @objc public func updateTextureMessage(_ message: pdfx.UpdateTextureMessage, completion: @escaping (Flutter.FlutterError?) -> Swift.Void)
+  @objc deinit
+}

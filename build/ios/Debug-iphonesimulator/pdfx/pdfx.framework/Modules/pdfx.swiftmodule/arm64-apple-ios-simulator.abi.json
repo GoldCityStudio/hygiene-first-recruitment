@@ -1,0 +1,4727 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "pdfx",
+    "printedName": "pdfx",
+    "children": [
+      {
+        "kind": "TypeDecl",
+        "name": "Document",
+        "printedName": "Document",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4pdfx8DocumentC2idSSvp",
+            "mangledName": "$s4pdfx8DocumentC2idSSvp",
+            "moduleName": "pdfx",
+            "declAttributes": [
+              "Final",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 0,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4pdfx8DocumentC2idSSvg",
+                "mangledName": "$s4pdfx8DocumentC2idSSvg",
+                "moduleName": "pdfx",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent",
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "renderer",
+            "printedName": "renderer",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGPDFDocument",
+                "printedName": "CoreGraphics.CGPDFDocument",
+                "usr": "c:@T@CGPDFDocumentRef"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4pdfx8DocumentC8rendererSo16CGPDFDocumentRefavp",
+            "mangledName": "$s4pdfx8DocumentC8rendererSo16CGPDFDocumentRefavp",
+            "moduleName": "pdfx",
+            "declAttributes": [
+              "Final",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 1,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGPDFDocument",
+                    "printedName": "CoreGraphics.CGPDFDocument",
+                    "usr": "c:@T@CGPDFDocumentRef"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4pdfx8DocumentC8rendererSo16CGPDFDocumentRefavg",
+                "mangledName": "$s4pdfx8DocumentC8rendererSo16CGPDFDocumentRefavg",
+                "moduleName": "pdfx",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent",
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "pages",
+            "printedName": "pages",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[CoreGraphics.CGPDFPage?]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "CoreGraphics.CGPDFPage?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CGPDFPage",
+                        "printedName": "CoreGraphics.CGPDFPage",
+                        "usr": "c:@T@CGPDFPageRef"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4pdfx8DocumentC5pagesSaySo12CGPDFPageRefaSgGvp",
+            "mangledName": "$s4pdfx8DocumentC5pagesSaySo12CGPDFPageRefaSgGvp",
+            "moduleName": "pdfx",
+            "isOpen": true,
+            "declAttributes": [
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 2,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[CoreGraphics.CGPDFPage?]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "CoreGraphics.CGPDFPage?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CGPDFPage",
+                            "printedName": "CoreGraphics.CGPDFPage",
+                            "usr": "c:@T@CGPDFPageRef"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4pdfx8DocumentC5pagesSaySo12CGPDFPageRefaSgGvg",
+                "mangledName": "$s4pdfx8DocumentC5pagesSaySo12CGPDFPageRefaSgGvg",
+                "moduleName": "pdfx",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[CoreGraphics.CGPDFPage?]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "CoreGraphics.CGPDFPage?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CGPDFPage",
+                            "printedName": "CoreGraphics.CGPDFPage",
+                            "usr": "c:@T@CGPDFPageRef"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4pdfx8DocumentC5pagesSaySo12CGPDFPageRefaSgGvs",
+                "mangledName": "$s4pdfx8DocumentC5pagesSaySo12CGPDFPageRefaSgGvs",
+                "moduleName": "pdfx",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4pdfx8DocumentC5pagesSaySo12CGPDFPageRefaSgGvM",
+                "mangledName": "$s4pdfx8DocumentC5pagesSaySo12CGPDFPageRefaSgGvM",
+                "moduleName": "pdfx",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(id:renderer:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Document",
+                "printedName": "pdfx.Document",
+                "usr": "s:4pdfx8DocumentC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGPDFDocument",
+                "printedName": "CoreGraphics.CGPDFDocument",
+                "usr": "c:@T@CGPDFDocumentRef"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:4pdfx8DocumentC2id8rendererACSS_So16CGPDFDocumentRefatcfc",
+            "mangledName": "$s4pdfx8DocumentC2id8rendererACSS_So16CGPDFDocumentRefatcfc",
+            "moduleName": "pdfx",
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "pagesCount",
+            "printedName": "pagesCount",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4pdfx8DocumentC10pagesCountSivp",
+            "mangledName": "$s4pdfx8DocumentC10pagesCountSivp",
+            "moduleName": "pdfx",
+            "isOpen": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4pdfx8DocumentC10pagesCountSivg",
+                "mangledName": "$s4pdfx8DocumentC10pagesCountSivg",
+                "moduleName": "pdfx",
+                "isOpen": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "openPage",
+            "printedName": "openPage(pageNumber:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreGraphics.CGPDFPage?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGPDFPage",
+                    "printedName": "CoreGraphics.CGPDFPage",
+                    "usr": "c:@T@CGPDFPageRef"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4pdfx8DocumentC8openPage10pageNumberSo12CGPDFPageRefaSgSi_tF",
+            "mangledName": "$s4pdfx8DocumentC8openPage10pageNumberSo12CGPDFPageRefaSgSi_tF",
+            "moduleName": "pdfx",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:4pdfx8DocumentC",
+        "mangledName": "$s4pdfx8DocumentC",
+        "moduleName": "pdfx",
+        "isOpen": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Page",
+        "printedName": "Page",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4pdfx4PageC2idSSvp",
+            "mangledName": "$s4pdfx4PageC2idSSvp",
+            "moduleName": "pdfx",
+            "declAttributes": [
+              "Final",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 0,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4pdfx4PageC2idSSvg",
+                "mangledName": "$s4pdfx4PageC2idSSvg",
+                "moduleName": "pdfx",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent",
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "documentId",
+            "printedName": "documentId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4pdfx4PageC10documentIdSSvp",
+            "mangledName": "$s4pdfx4PageC10documentIdSSvp",
+            "moduleName": "pdfx",
+            "declAttributes": [
+              "Final",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 1,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4pdfx4PageC10documentIdSSvg",
+                "mangledName": "$s4pdfx4PageC10documentIdSSvg",
+                "moduleName": "pdfx",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent",
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "renderer",
+            "printedName": "renderer",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGPDFPage",
+                "printedName": "CoreGraphics.CGPDFPage",
+                "usr": "c:@T@CGPDFPageRef"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4pdfx4PageC8rendererSo12CGPDFPageRefavp",
+            "mangledName": "$s4pdfx4PageC8rendererSo12CGPDFPageRefavp",
+            "moduleName": "pdfx",
+            "declAttributes": [
+              "Final",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 2,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGPDFPage",
+                    "printedName": "CoreGraphics.CGPDFPage",
+                    "usr": "c:@T@CGPDFPageRef"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4pdfx4PageC8rendererSo12CGPDFPageRefavg",
+                "mangledName": "$s4pdfx4PageC8rendererSo12CGPDFPageRefavg",
+                "moduleName": "pdfx",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent",
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "boxRect",
+            "printedName": "boxRect",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4pdfx4PageC7boxRectSo6CGRectVvp",
+            "mangledName": "$s4pdfx4PageC7boxRectSo6CGRectVvp",
+            "moduleName": "pdfx",
+            "declAttributes": [
+              "Final",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 3,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGRect",
+                    "printedName": "CoreFoundation.CGRect",
+                    "usr": "c:@S@CGRect"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4pdfx4PageC7boxRectSo6CGRectVvg",
+                "mangledName": "$s4pdfx4PageC7boxRectSo6CGRectVvg",
+                "moduleName": "pdfx",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent",
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(id:documentId:renderer:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Page",
+                "printedName": "pdfx.Page",
+                "usr": "s:4pdfx4PageC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGPDFPage",
+                "printedName": "CoreGraphics.CGPDFPage",
+                "usr": "c:@T@CGPDFPageRef"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:4pdfx4PageC2id10documentId8rendererACSS_SSSo12CGPDFPageRefatcfc",
+            "mangledName": "$s4pdfx4PageC2id10documentId8rendererACSS_SSSo12CGPDFPageRefatcfc",
+            "moduleName": "pdfx",
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "number",
+            "printedName": "number",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4pdfx4PageC6numberSivp",
+            "mangledName": "$s4pdfx4PageC6numberSivp",
+            "moduleName": "pdfx",
+            "isOpen": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4pdfx4PageC6numberSivg",
+                "mangledName": "$s4pdfx4PageC6numberSivg",
+                "moduleName": "pdfx",
+                "isOpen": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "width",
+            "printedName": "width",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4pdfx4PageC5widthSdvp",
+            "mangledName": "$s4pdfx4PageC5widthSdvp",
+            "moduleName": "pdfx",
+            "isOpen": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4pdfx4PageC5widthSdvg",
+                "mangledName": "$s4pdfx4PageC5widthSdvg",
+                "moduleName": "pdfx",
+                "isOpen": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "height",
+            "printedName": "height",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4pdfx4PageC6heightSdvp",
+            "mangledName": "$s4pdfx4PageC6heightSdvp",
+            "moduleName": "pdfx",
+            "isOpen": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4pdfx4PageC6heightSdvg",
+                "mangledName": "$s4pdfx4PageC6heightSdvg",
+                "moduleName": "pdfx",
+                "isOpen": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "rotationAngle",
+            "printedName": "rotationAngle",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4pdfx4PageC13rotationAngles5Int32Vvp",
+            "mangledName": "$s4pdfx4PageC13rotationAngles5Int32Vvp",
+            "moduleName": "pdfx",
+            "isOpen": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int32",
+                    "printedName": "Swift.Int32",
+                    "usr": "s:s5Int32V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4pdfx4PageC13rotationAngles5Int32Vvg",
+                "mangledName": "$s4pdfx4PageC13rotationAngles5Int32Vvg",
+                "moduleName": "pdfx",
+                "isOpen": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isLandscape",
+            "printedName": "isLandscape",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4pdfx4PageC11isLandscapeSbvp",
+            "mangledName": "$s4pdfx4PageC11isLandscapeSbvp",
+            "moduleName": "pdfx",
+            "isOpen": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4pdfx4PageC11isLandscapeSbvg",
+                "mangledName": "$s4pdfx4PageC11isLandscapeSbvg",
+                "moduleName": "pdfx",
+                "isOpen": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "render",
+            "printedName": "render(width:height:crop:compressFormat:backgroundColor:quality:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "pdfx.Page.DataResult?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DataResult",
+                    "printedName": "pdfx.Page.DataResult",
+                    "usr": "s:4pdfx4PageC10DataResultC"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreFoundation.CGRect?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGRect",
+                    "printedName": "CoreFoundation.CGRect",
+                    "usr": "c:@S@CGRect"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CompressFormat",
+                "printedName": "pdfx.CompressFormat",
+                "usr": "s:4pdfx14CompressFormatO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4pdfx4PageC6render5width6height4crop14compressFormat15backgroundColor7qualityAC10DataResultCSgSi_SiSo6CGRectVSgAA08CompressH0OSSSitF",
+            "mangledName": "$s4pdfx4PageC6render5width6height4crop14compressFormat15backgroundColor7qualityAC10DataResultCSgSi_SiSo6CGRectVSgAA08CompressH0OSSSitF",
+            "moduleName": "pdfx",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "writeToTempFile",
+            "printedName": "writeToTempFile(data:compressFormat:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URL?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CompressFormat",
+                "printedName": "pdfx.CompressFormat",
+                "usr": "s:4pdfx14CompressFormatO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4pdfx4PageC15writeToTempFile4data14compressFormat10Foundation3URLVSgAG4DataV_AA08CompressI0OtF",
+            "mangledName": "$s4pdfx4PageC15writeToTempFile4data14compressFormat10Foundation3URLVSgAG4DataV_AA08CompressI0OtF",
+            "moduleName": "pdfx",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "DataResult",
+            "printedName": "DataResult",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "width",
+                "printedName": "width",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:4pdfx4PageC10DataResultC5widthSivp",
+                "mangledName": "$s4pdfx4PageC10DataResultC5widthSivp",
+                "moduleName": "pdfx",
+                "declAttributes": [
+                  "Final",
+                  "HasStorage"
+                ],
+                "fixedbinaryorder": 0,
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:4pdfx4PageC10DataResultC5widthSivg",
+                    "mangledName": "$s4pdfx4PageC10DataResultC5widthSivg",
+                    "moduleName": "pdfx",
+                    "implicit": true,
+                    "declAttributes": [
+                      "Transparent",
+                      "Final"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "height",
+                "printedName": "height",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:4pdfx4PageC10DataResultC6heightSivp",
+                "mangledName": "$s4pdfx4PageC10DataResultC6heightSivp",
+                "moduleName": "pdfx",
+                "declAttributes": [
+                  "Final",
+                  "HasStorage"
+                ],
+                "fixedbinaryorder": 1,
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:4pdfx4PageC10DataResultC6heightSivg",
+                    "mangledName": "$s4pdfx4PageC10DataResultC6heightSivg",
+                    "moduleName": "pdfx",
+                    "implicit": true,
+                    "declAttributes": [
+                      "Transparent",
+                      "Final"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "path",
+                "printedName": "path",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:4pdfx4PageC10DataResultC4pathSSvp",
+                "mangledName": "$s4pdfx4PageC10DataResultC4pathSSvp",
+                "moduleName": "pdfx",
+                "declAttributes": [
+                  "Final",
+                  "HasStorage"
+                ],
+                "fixedbinaryorder": 2,
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:4pdfx4PageC10DataResultC4pathSSvg",
+                    "mangledName": "$s4pdfx4PageC10DataResultC4pathSSvg",
+                    "moduleName": "pdfx",
+                    "implicit": true,
+                    "declAttributes": [
+                      "Transparent",
+                      "Final"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(width:height:path:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DataResult",
+                    "printedName": "pdfx.Page.DataResult",
+                    "usr": "s:4pdfx4PageC10DataResultC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:4pdfx4PageC10DataResultC5width6height4pathAESi_SiSStcfc",
+                "mangledName": "$s4pdfx4PageC10DataResultC5width6height4pathAESi_SiSStcfc",
+                "moduleName": "pdfx",
+                "init_kind": "Designated"
+              }
+            ],
+            "declKind": "Class",
+            "usr": "s:4pdfx4PageC10DataResultC",
+            "mangledName": "$s4pdfx4PageC10DataResultC",
+            "moduleName": "pdfx",
+            "isOpen": true,
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:4pdfx4PageC",
+        "mangledName": "$s4pdfx4PageC",
+        "moduleName": "pdfx",
+        "isOpen": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CompressFormat",
+        "printedName": "CompressFormat",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "JPEG",
+            "printedName": "JPEG",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(pdfx.CompressFormat.Type) -> pdfx.CompressFormat",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CompressFormat",
+                    "printedName": "pdfx.CompressFormat",
+                    "usr": "s:4pdfx14CompressFormatO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "pdfx.CompressFormat.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CompressFormat",
+                        "printedName": "pdfx.CompressFormat",
+                        "usr": "s:4pdfx14CompressFormatO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:4pdfx14CompressFormatO4JPEGyA2CmF",
+            "mangledName": "$s4pdfx14CompressFormatO4JPEGyA2CmF",
+            "moduleName": "pdfx",
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "PNG",
+            "printedName": "PNG",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(pdfx.CompressFormat.Type) -> pdfx.CompressFormat",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CompressFormat",
+                    "printedName": "pdfx.CompressFormat",
+                    "usr": "s:4pdfx14CompressFormatO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "pdfx.CompressFormat.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CompressFormat",
+                        "printedName": "pdfx.CompressFormat",
+                        "usr": "s:4pdfx14CompressFormatO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:4pdfx14CompressFormatO3PNGyA2CmF",
+            "mangledName": "$s4pdfx14CompressFormatO3PNGyA2CmF",
+            "moduleName": "pdfx",
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "pdfx.CompressFormat?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CompressFormat",
+                    "printedName": "pdfx.CompressFormat",
+                    "usr": "s:4pdfx14CompressFormatO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:4pdfx14CompressFormatO8rawValueACSgSi_tcfc",
+            "mangledName": "$s4pdfx14CompressFormatO8rawValueACSgSi_tcfc",
+            "moduleName": "pdfx",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4pdfx14CompressFormatO8rawValueSivp",
+            "mangledName": "$s4pdfx14CompressFormatO8rawValueSivp",
+            "moduleName": "pdfx",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4pdfx14CompressFormatO8rawValueSivg",
+                "mangledName": "$s4pdfx14CompressFormatO8rawValueSivg",
+                "moduleName": "pdfx",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:4pdfx14CompressFormatO",
+        "mangledName": "$s4pdfx14CompressFormatO",
+        "moduleName": "pdfx",
+        "enumRawTypeName": "Int",
+        "isEnumExhaustive": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "BitwiseCopyable",
+            "printedName": "BitwiseCopyable",
+            "usr": "s:s15BitwiseCopyableP",
+            "mangledName": "$ss15BitwiseCopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "pdfx"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "RepositoryError",
+        "printedName": "RepositoryError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "ItemNotFound",
+            "printedName": "ItemNotFound",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(pdfx.RepositoryError.Type) -> pdfx.RepositoryError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RepositoryError",
+                    "printedName": "pdfx.RepositoryError",
+                    "usr": "s:4pdfx15RepositoryErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "pdfx.RepositoryError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RepositoryError",
+                        "printedName": "pdfx.RepositoryError",
+                        "usr": "s:4pdfx15RepositoryErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:4pdfx15RepositoryErrorO12ItemNotFoundyA2CmF",
+            "mangledName": "$s4pdfx15RepositoryErrorO12ItemNotFoundyA2CmF",
+            "moduleName": "pdfx",
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RepositoryError",
+                "printedName": "pdfx.RepositoryError",
+                "usr": "s:4pdfx15RepositoryErrorO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RepositoryError",
+                "printedName": "pdfx.RepositoryError",
+                "usr": "s:4pdfx15RepositoryErrorO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4pdfx15RepositoryErrorO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s4pdfx15RepositoryErrorO2eeoiySbAC_ACtFZ",
+            "moduleName": "pdfx",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4pdfx15RepositoryErrorO9hashValueSivp",
+            "mangledName": "$s4pdfx15RepositoryErrorO9hashValueSivp",
+            "moduleName": "pdfx",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4pdfx15RepositoryErrorO9hashValueSivg",
+                "mangledName": "$s4pdfx15RepositoryErrorO9hashValueSivg",
+                "moduleName": "pdfx",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4pdfx15RepositoryErrorO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s4pdfx15RepositoryErrorO4hash4intoys6HasherVz_tF",
+            "moduleName": "pdfx",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:4pdfx15RepositoryErrorO",
+        "mangledName": "$s4pdfx15RepositoryErrorO",
+        "moduleName": "pdfx",
+        "isEnumExhaustive": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "BitwiseCopyable",
+            "printedName": "BitwiseCopyable",
+            "usr": "s:s15BitwiseCopyableP",
+            "mangledName": "$ss15BitwiseCopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Repository",
+        "printedName": "Repository",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "items",
+            "printedName": "items",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : τ_0_0]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4pdfx10RepositoryC5itemsSDySSxGvp",
+            "mangledName": "$s4pdfx10RepositoryC5itemsSDySSxGvp",
+            "moduleName": "pdfx",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 0,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : τ_0_0]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4pdfx10RepositoryC5itemsSDySSxGvg",
+                "mangledName": "$s4pdfx10RepositoryC5itemsSDySSxGvg",
+                "moduleName": "pdfx",
+                "genericSig": "<τ_0_0>",
+                "sugared_genericSig": "<T>",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : τ_0_0]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4pdfx10RepositoryC5itemsSDySSxGvs",
+                "mangledName": "$s4pdfx10RepositoryC5itemsSDySSxGvs",
+                "moduleName": "pdfx",
+                "genericSig": "<τ_0_0>",
+                "sugared_genericSig": "<T>",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4pdfx10RepositoryC5itemsSDySSxGvM",
+                "mangledName": "$s4pdfx10RepositoryC5itemsSDySSxGvM",
+                "moduleName": "pdfx",
+                "genericSig": "<τ_0_0>",
+                "sugared_genericSig": "<T>",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "get",
+            "printedName": "get(id:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4pdfx10RepositoryC3get2idxSS_tKF",
+            "mangledName": "$s4pdfx10RepositoryC3get2idxSS_tKF",
+            "moduleName": "pdfx",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<T>",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "set",
+            "printedName": "set(id:item:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4pdfx10RepositoryC3set2id4itemySS_xtF",
+            "mangledName": "$s4pdfx10RepositoryC3set2id4itemySS_xtF",
+            "moduleName": "pdfx",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<T>",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "close",
+            "printedName": "close(id:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4pdfx10RepositoryC5close2idySS_tF",
+            "mangledName": "$s4pdfx10RepositoryC5close2idySS_tF",
+            "moduleName": "pdfx",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<T>",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Repository",
+                "printedName": "pdfx.Repository<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:4pdfx10RepositoryC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:4pdfx10RepositoryCACyxGycfc",
+            "mangledName": "$s4pdfx10RepositoryCACyxGycfc",
+            "moduleName": "pdfx",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<T>",
+            "implicit": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:4pdfx10RepositoryC",
+        "mangledName": "$s4pdfx10RepositoryC",
+        "moduleName": "pdfx",
+        "genericSig": "<τ_0_0>",
+        "sugared_genericSig": "<T>",
+        "isOpen": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DocumentRepository",
+        "printedName": "DocumentRepository",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "register",
+            "printedName": "register(renderer:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Document",
+                "printedName": "pdfx.Document",
+                "usr": "s:4pdfx8DocumentC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGPDFDocument",
+                "printedName": "CoreGraphics.CGPDFDocument",
+                "usr": "c:@T@CGPDFDocumentRef"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4pdfx18DocumentRepositoryC8register8rendererAA0B0CSo16CGPDFDocumentRefa_tF",
+            "mangledName": "$s4pdfx18DocumentRepositoryC8register8rendererAA0B0CSo16CGPDFDocumentRefa_tF",
+            "moduleName": "pdfx",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DocumentRepository",
+                "printedName": "pdfx.DocumentRepository",
+                "usr": "s:4pdfx18DocumentRepositoryC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:4pdfx18DocumentRepositoryCACycfc",
+            "mangledName": "$s4pdfx18DocumentRepositoryCACycfc",
+            "moduleName": "pdfx",
+            "overriding": true,
+            "implicit": true,
+            "declAttributes": [
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:4pdfx18DocumentRepositoryC",
+        "mangledName": "$s4pdfx18DocumentRepositoryC",
+        "moduleName": "pdfx",
+        "isOpen": true,
+        "superclassUsr": "s:4pdfx10RepositoryC",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "pdfx.Repository<pdfx.Document>"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PageRepository",
+        "printedName": "PageRepository",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "register",
+            "printedName": "register(documentId:renderer:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Page",
+                "printedName": "pdfx.Page",
+                "usr": "s:4pdfx4PageC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGPDFPage",
+                "printedName": "CoreGraphics.CGPDFPage",
+                "usr": "c:@T@CGPDFPageRef"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4pdfx14PageRepositoryC8register10documentId8rendererAA0B0CSS_So12CGPDFPageRefatF",
+            "mangledName": "$s4pdfx14PageRepositoryC8register10documentId8rendererAA0B0CSS_So12CGPDFPageRefatF",
+            "moduleName": "pdfx",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PageRepository",
+                "printedName": "pdfx.PageRepository",
+                "usr": "s:4pdfx14PageRepositoryC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:4pdfx14PageRepositoryCACycfc",
+            "mangledName": "$s4pdfx14PageRepositoryCACycfc",
+            "moduleName": "pdfx",
+            "overriding": true,
+            "implicit": true,
+            "declAttributes": [
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:4pdfx14PageRepositoryC",
+        "mangledName": "$s4pdfx14PageRepositoryC",
+        "moduleName": "pdfx",
+        "isOpen": true,
+        "superclassUsr": "s:4pdfx10RepositoryC",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "pdfx.Repository<pdfx.Page>"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Flutter",
+        "printedName": "Flutter",
+        "declKind": "Import",
+        "moduleName": "pdfx"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "pdfx"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreGraphics",
+        "printedName": "CoreGraphics",
+        "declKind": "Import",
+        "moduleName": "pdfx"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SwiftPdfxPlugin",
+        "printedName": "SwiftPdfxPlugin",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "registrar",
+            "printedName": "registrar",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FlutterPluginRegistrar",
+                "printedName": "any Flutter.FlutterPluginRegistrar",
+                "usr": "c:objc(pl)FlutterPluginRegistrar"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4pdfx15SwiftPdfxPluginC9registrarSo07FlutterD9Registrar_pvp",
+            "mangledName": "$s4pdfx15SwiftPdfxPluginC9registrarSo07FlutterD9Registrar_pvp",
+            "moduleName": "pdfx",
+            "declAttributes": [
+              "Final",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FlutterPluginRegistrar",
+                    "printedName": "any Flutter.FlutterPluginRegistrar",
+                    "usr": "c:objc(pl)FlutterPluginRegistrar"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4pdfx15SwiftPdfxPluginC9registrarSo07FlutterD9Registrar_pvg",
+                "mangledName": "$s4pdfx15SwiftPdfxPluginC9registrarSo07FlutterD9Registrar_pvg",
+                "moduleName": "pdfx",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "invalid",
+            "printedName": "invalid",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NSNumber",
+                "printedName": "Foundation.NSNumber",
+                "usr": "c:objc(cs)NSNumber"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4pdfx15SwiftPdfxPluginC7invalidSo8NSNumberCvpZ",
+            "mangledName": "$s4pdfx15SwiftPdfxPluginC7invalidSo8NSNumberCvpZ",
+            "moduleName": "pdfx",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSNumber",
+                    "printedName": "Foundation.NSNumber",
+                    "usr": "c:objc(cs)NSNumber"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4pdfx15SwiftPdfxPluginC7invalidSo8NSNumberCvgZ",
+                "mangledName": "$s4pdfx15SwiftPdfxPluginC7invalidSo8NSNumberCvgZ",
+                "moduleName": "pdfx",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "dispQueue",
+            "printedName": "dispQueue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DispatchQueue",
+                "printedName": "Dispatch.DispatchQueue",
+                "usr": "c:objc(cs)OS_dispatch_queue"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4pdfx15SwiftPdfxPluginC9dispQueueSo17OS_dispatch_queueCvp",
+            "mangledName": "$s4pdfx15SwiftPdfxPluginC9dispQueueSo17OS_dispatch_queueCvp",
+            "moduleName": "pdfx",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DispatchQueue",
+                    "printedName": "Dispatch.DispatchQueue",
+                    "usr": "c:objc(cs)OS_dispatch_queue"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4pdfx15SwiftPdfxPluginC9dispQueueSo17OS_dispatch_queueCvg",
+                "mangledName": "$s4pdfx15SwiftPdfxPluginC9dispQueueSo17OS_dispatch_queueCvg",
+                "moduleName": "pdfx",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "documents",
+            "printedName": "documents",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DocumentRepository",
+                "printedName": "pdfx.DocumentRepository",
+                "usr": "s:4pdfx18DocumentRepositoryC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4pdfx15SwiftPdfxPluginC9documentsAA18DocumentRepositoryCvp",
+            "mangledName": "$s4pdfx15SwiftPdfxPluginC9documentsAA18DocumentRepositoryCvp",
+            "moduleName": "pdfx",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DocumentRepository",
+                    "printedName": "pdfx.DocumentRepository",
+                    "usr": "s:4pdfx18DocumentRepositoryC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4pdfx15SwiftPdfxPluginC9documentsAA18DocumentRepositoryCvg",
+                "mangledName": "$s4pdfx15SwiftPdfxPluginC9documentsAA18DocumentRepositoryCvg",
+                "moduleName": "pdfx",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "pages",
+            "printedName": "pages",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PageRepository",
+                "printedName": "pdfx.PageRepository",
+                "usr": "s:4pdfx14PageRepositoryC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4pdfx15SwiftPdfxPluginC5pagesAA14PageRepositoryCvp",
+            "mangledName": "$s4pdfx15SwiftPdfxPluginC5pagesAA14PageRepositoryCvp",
+            "moduleName": "pdfx",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PageRepository",
+                    "printedName": "pdfx.PageRepository",
+                    "usr": "s:4pdfx14PageRepositoryC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4pdfx15SwiftPdfxPluginC5pagesAA14PageRepositoryCvg",
+                "mangledName": "$s4pdfx15SwiftPdfxPluginC5pagesAA14PageRepositoryCvg",
+                "moduleName": "pdfx",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "textures",
+            "printedName": "textures",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.Int64 : pdfx.PdfPageTexture]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int64",
+                    "printedName": "Swift.Int64",
+                    "usr": "s:s5Int64V"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PdfPageTexture",
+                    "printedName": "pdfx.PdfPageTexture",
+                    "usr": "c:@M@pdfx@objc(cs)PdfPageTexture"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4pdfx15SwiftPdfxPluginC8texturesSDys5Int64VAA14PdfPageTextureCGvp",
+            "mangledName": "$s4pdfx15SwiftPdfxPluginC8texturesSDys5Int64VAA14PdfPageTextureCGvp",
+            "moduleName": "pdfx",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.Int64 : pdfx.PdfPageTexture]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int64",
+                        "printedName": "Swift.Int64",
+                        "usr": "s:s5Int64V"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PdfPageTexture",
+                        "printedName": "pdfx.PdfPageTexture",
+                        "usr": "c:@M@pdfx@objc(cs)PdfPageTexture"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4pdfx15SwiftPdfxPluginC8texturesSDys5Int64VAA14PdfPageTextureCGvg",
+                "mangledName": "$s4pdfx15SwiftPdfxPluginC8texturesSDys5Int64VAA14PdfPageTextureCGvg",
+                "moduleName": "pdfx",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.Int64 : pdfx.PdfPageTexture]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int64",
+                        "printedName": "Swift.Int64",
+                        "usr": "s:s5Int64V"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PdfPageTexture",
+                        "printedName": "pdfx.PdfPageTexture",
+                        "usr": "c:@M@pdfx@objc(cs)PdfPageTexture"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4pdfx15SwiftPdfxPluginC8texturesSDys5Int64VAA14PdfPageTextureCGvs",
+                "mangledName": "$s4pdfx15SwiftPdfxPluginC8texturesSDys5Int64VAA14PdfPageTextureCGvs",
+                "moduleName": "pdfx",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4pdfx15SwiftPdfxPluginC8texturesSDys5Int64VAA14PdfPageTextureCGvM",
+                "mangledName": "$s4pdfx15SwiftPdfxPluginC8texturesSDys5Int64VAA14PdfPageTextureCGvM",
+                "moduleName": "pdfx",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(registrar:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SwiftPdfxPlugin",
+                "printedName": "pdfx.SwiftPdfxPlugin",
+                "usr": "c:@M@pdfx@objc(cs)SwiftPdfxPlugin"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FlutterPluginRegistrar",
+                "printedName": "any Flutter.FlutterPluginRegistrar",
+                "usr": "c:objc(pl)FlutterPluginRegistrar"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:4pdfx15SwiftPdfxPluginC9registrarACSo07FlutterD9Registrar_p_tcfc",
+            "mangledName": "$s4pdfx15SwiftPdfxPluginC9registrarACSo07FlutterD9Registrar_p_tcfc",
+            "moduleName": "pdfx",
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "register",
+            "printedName": "register(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FlutterPluginRegistrar",
+                "printedName": "any Flutter.FlutterPluginRegistrar",
+                "usr": "c:objc(pl)FlutterPluginRegistrar"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@pdfx@objc(cs)SwiftPdfxPlugin(cm)registerWithRegistrar:",
+            "mangledName": "$s4pdfx15SwiftPdfxPluginC8register4withySo07FlutterD9Registrar_p_tFZ",
+            "moduleName": "pdfx",
+            "static": true,
+            "objc_name": "registerWithRegistrar:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "openDocumentDataMessage",
+            "printedName": "openDocumentDataMessage(_:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "OpenDataMessage",
+                "printedName": "pdfx.OpenDataMessage",
+                "usr": "c:objc(cs)OpenDataMessage"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(pdfx.OpenReply?, Flutter.FlutterError?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(pdfx.OpenReply?, Flutter.FlutterError?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "pdfx.OpenReply?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "OpenReply",
+                            "printedName": "pdfx.OpenReply",
+                            "usr": "c:objc(cs)OpenReply"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Flutter.FlutterError?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "FlutterError",
+                            "printedName": "Flutter.FlutterError",
+                            "usr": "c:objc(cs)FlutterError"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@pdfx@objc(cs)SwiftPdfxPlugin(im)openDocumentDataMessage:completion:",
+            "mangledName": "$s4pdfx15SwiftPdfxPluginC23openDocumentDataMessage_10completionySo04OpengH0C_ySo0J5ReplyCSg_So12FlutterErrorCSgtctF",
+            "moduleName": "pdfx",
+            "isOpen": true,
+            "objc_name": "openDocumentDataMessage:completion:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "openDocumentFileMessage",
+            "printedName": "openDocumentFileMessage(_:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "OpenPathMessage",
+                "printedName": "pdfx.OpenPathMessage",
+                "usr": "c:objc(cs)OpenPathMessage"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(pdfx.OpenReply?, Flutter.FlutterError?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(pdfx.OpenReply?, Flutter.FlutterError?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "pdfx.OpenReply?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "OpenReply",
+                            "printedName": "pdfx.OpenReply",
+                            "usr": "c:objc(cs)OpenReply"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Flutter.FlutterError?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "FlutterError",
+                            "printedName": "Flutter.FlutterError",
+                            "usr": "c:objc(cs)FlutterError"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@pdfx@objc(cs)SwiftPdfxPlugin(im)openDocumentFileMessage:completion:",
+            "mangledName": "$s4pdfx15SwiftPdfxPluginC23openDocumentFileMessage_10completionySo08OpenPathH0C_ySo0J5ReplyCSg_So12FlutterErrorCSgtctF",
+            "moduleName": "pdfx",
+            "isOpen": true,
+            "objc_name": "openDocumentFileMessage:completion:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "openDocumentAssetMessage",
+            "printedName": "openDocumentAssetMessage(_:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "OpenPathMessage",
+                "printedName": "pdfx.OpenPathMessage",
+                "usr": "c:objc(cs)OpenPathMessage"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(pdfx.OpenReply?, Flutter.FlutterError?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(pdfx.OpenReply?, Flutter.FlutterError?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "pdfx.OpenReply?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "OpenReply",
+                            "printedName": "pdfx.OpenReply",
+                            "usr": "c:objc(cs)OpenReply"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Flutter.FlutterError?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "FlutterError",
+                            "printedName": "Flutter.FlutterError",
+                            "usr": "c:objc(cs)FlutterError"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@pdfx@objc(cs)SwiftPdfxPlugin(im)openDocumentAssetMessage:completion:",
+            "mangledName": "$s4pdfx15SwiftPdfxPluginC24openDocumentAssetMessage_10completionySo08OpenPathH0C_ySo0J5ReplyCSg_So12FlutterErrorCSgtctF",
+            "moduleName": "pdfx",
+            "isOpen": true,
+            "objc_name": "openDocumentAssetMessage:completion:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "closeDocumentMessage",
+            "printedName": "closeDocumentMessage(_:error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IdMessage",
+                "printedName": "pdfx.IdMessage",
+                "usr": "c:objc(cs)IdMessage"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AutoreleasingUnsafeMutablePointer",
+                "printedName": "Swift.AutoreleasingUnsafeMutablePointer<Flutter.FlutterError?>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Flutter.FlutterError?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FlutterError",
+                        "printedName": "Flutter.FlutterError",
+                        "usr": "c:objc(cs)FlutterError"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "usr": "s:SA"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@pdfx@objc(cs)SwiftPdfxPlugin(im)closeDocumentMessage:error:",
+            "mangledName": "$s4pdfx15SwiftPdfxPluginC20closeDocumentMessage_5errorySo02IdG0C_SAySo12FlutterErrorCSgGtF",
+            "moduleName": "pdfx",
+            "isOpen": true,
+            "objc_name": "closeDocumentMessage:error:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getPageMessage",
+            "printedName": "getPageMessage(_:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GetPageMessage",
+                "printedName": "pdfx.GetPageMessage",
+                "usr": "c:objc(cs)GetPageMessage"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(pdfx.GetPageReply?, Flutter.FlutterError?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(pdfx.GetPageReply?, Flutter.FlutterError?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "pdfx.GetPageReply?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GetPageReply",
+                            "printedName": "pdfx.GetPageReply",
+                            "usr": "c:objc(cs)GetPageReply"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Flutter.FlutterError?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "FlutterError",
+                            "printedName": "Flutter.FlutterError",
+                            "usr": "c:objc(cs)FlutterError"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@pdfx@objc(cs)SwiftPdfxPlugin(im)getPageMessage:completion:",
+            "mangledName": "$s4pdfx15SwiftPdfxPluginC14getPageMessage_10completionySo03GetfG0C_ySo0iF5ReplyCSg_So12FlutterErrorCSgtctF",
+            "moduleName": "pdfx",
+            "isOpen": true,
+            "objc_name": "getPageMessage:completion:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "renderPageMessage",
+            "printedName": "renderPageMessage(_:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RenderPageMessage",
+                "printedName": "pdfx.RenderPageMessage",
+                "usr": "c:objc(cs)RenderPageMessage"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(pdfx.RenderPageReply?, Flutter.FlutterError?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(pdfx.RenderPageReply?, Flutter.FlutterError?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "pdfx.RenderPageReply?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "RenderPageReply",
+                            "printedName": "pdfx.RenderPageReply",
+                            "usr": "c:objc(cs)RenderPageReply"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Flutter.FlutterError?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "FlutterError",
+                            "printedName": "Flutter.FlutterError",
+                            "usr": "c:objc(cs)FlutterError"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@pdfx@objc(cs)SwiftPdfxPlugin(im)renderPageMessage:completion:",
+            "mangledName": "$s4pdfx15SwiftPdfxPluginC17renderPageMessage_10completionySo06RenderfG0C_ySo0iF5ReplyCSg_So12FlutterErrorCSgtctF",
+            "moduleName": "pdfx",
+            "isOpen": true,
+            "objc_name": "renderPageMessage:completion:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "closePageMessage",
+            "printedName": "closePageMessage(_:error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IdMessage",
+                "printedName": "pdfx.IdMessage",
+                "usr": "c:objc(cs)IdMessage"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AutoreleasingUnsafeMutablePointer",
+                "printedName": "Swift.AutoreleasingUnsafeMutablePointer<Flutter.FlutterError?>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Flutter.FlutterError?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FlutterError",
+                        "printedName": "Flutter.FlutterError",
+                        "usr": "c:objc(cs)FlutterError"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "usr": "s:SA"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@pdfx@objc(cs)SwiftPdfxPlugin(im)closePageMessage:error:",
+            "mangledName": "$s4pdfx15SwiftPdfxPluginC16closePageMessage_5errorySo02IdG0C_SAySo12FlutterErrorCSgGtF",
+            "moduleName": "pdfx",
+            "isOpen": true,
+            "objc_name": "closePageMessage:error:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "registerTextureWithError",
+            "printedName": "registerTextureWithError(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "pdfx.RegisterTextureReply?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RegisterTextureReply",
+                    "printedName": "pdfx.RegisterTextureReply",
+                    "usr": "c:objc(cs)RegisterTextureReply"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AutoreleasingUnsafeMutablePointer",
+                "printedName": "Swift.AutoreleasingUnsafeMutablePointer<Flutter.FlutterError?>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Flutter.FlutterError?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FlutterError",
+                        "printedName": "Flutter.FlutterError",
+                        "usr": "c:objc(cs)FlutterError"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "usr": "s:SA"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@pdfx@objc(cs)SwiftPdfxPlugin(im)registerTextureWithError:",
+            "mangledName": "$s4pdfx15SwiftPdfxPluginC24registerTextureWithErrorySo08RegisterF5ReplyCSgSAySo07FlutterH0CSgGF",
+            "moduleName": "pdfx",
+            "isOpen": true,
+            "objc_name": "registerTextureWithError:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "unregisterTextureMessage",
+            "printedName": "unregisterTextureMessage(_:error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UnregisterTextureMessage",
+                "printedName": "pdfx.UnregisterTextureMessage",
+                "usr": "c:objc(cs)UnregisterTextureMessage"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AutoreleasingUnsafeMutablePointer",
+                "printedName": "Swift.AutoreleasingUnsafeMutablePointer<Flutter.FlutterError?>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Flutter.FlutterError?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FlutterError",
+                        "printedName": "Flutter.FlutterError",
+                        "usr": "c:objc(cs)FlutterError"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "usr": "s:SA"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@pdfx@objc(cs)SwiftPdfxPlugin(im)unregisterTextureMessage:error:",
+            "mangledName": "$s4pdfx15SwiftPdfxPluginC24unregisterTextureMessage_5errorySo010UnregisterfG0C_SAySo12FlutterErrorCSgGtF",
+            "moduleName": "pdfx",
+            "isOpen": true,
+            "objc_name": "unregisterTextureMessage:error:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "resizeTextureMessage",
+            "printedName": "resizeTextureMessage(_:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ResizeTextureMessage",
+                "printedName": "pdfx.ResizeTextureMessage",
+                "usr": "c:objc(cs)ResizeTextureMessage"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Flutter.FlutterError?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Flutter.FlutterError?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FlutterError",
+                        "printedName": "Flutter.FlutterError",
+                        "usr": "c:objc(cs)FlutterError"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@pdfx@objc(cs)SwiftPdfxPlugin(im)resizeTextureMessage:completion:",
+            "mangledName": "$s4pdfx15SwiftPdfxPluginC20resizeTextureMessage_10completionySo06ResizefG0C_ySo12FlutterErrorCSgctF",
+            "moduleName": "pdfx",
+            "isOpen": true,
+            "objc_name": "resizeTextureMessage:completion:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updateTextureMessage",
+            "printedName": "updateTextureMessage(_:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UpdateTextureMessage",
+                "printedName": "pdfx.UpdateTextureMessage",
+                "usr": "c:objc(cs)UpdateTextureMessage"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Flutter.FlutterError?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Flutter.FlutterError?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FlutterError",
+                        "printedName": "Flutter.FlutterError",
+                        "usr": "c:objc(cs)FlutterError"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@pdfx@objc(cs)SwiftPdfxPlugin(im)updateTextureMessage:completion:",
+            "mangledName": "$s4pdfx15SwiftPdfxPluginC20updateTextureMessage_10completionySo06UpdatefG0C_ySo12FlutterErrorCSgctF",
+            "moduleName": "pdfx",
+            "isOpen": true,
+            "objc_name": "updateTextureMessage:completion:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "openDataDocument",
+            "printedName": "openDataDocument(data:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreGraphics.CGPDFDocument?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGPDFDocument",
+                    "printedName": "CoreGraphics.CGPDFDocument",
+                    "usr": "c:@T@CGPDFDocumentRef"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4pdfx15SwiftPdfxPluginC16openDataDocument4dataSo16CGPDFDocumentRefaSg10Foundation0F0V_tF",
+            "mangledName": "$s4pdfx15SwiftPdfxPluginC16openDataDocument4dataSo16CGPDFDocumentRefaSg10Foundation0F0V_tF",
+            "moduleName": "pdfx",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "openFileDocument",
+            "printedName": "openFileDocument(pdfFilePath:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreGraphics.CGPDFDocument?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGPDFDocument",
+                    "printedName": "CoreGraphics.CGPDFDocument",
+                    "usr": "c:@T@CGPDFDocumentRef"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4pdfx15SwiftPdfxPluginC16openFileDocument03pdfF4PathSo16CGPDFDocumentRefaSgSS_tF",
+            "mangledName": "$s4pdfx15SwiftPdfxPluginC16openFileDocument03pdfF4PathSo16CGPDFDocumentRefaSgSS_tF",
+            "moduleName": "pdfx",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "openAssetDocument",
+            "printedName": "openAssetDocument(name:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreGraphics.CGPDFDocument?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGPDFDocument",
+                    "printedName": "CoreGraphics.CGPDFDocument",
+                    "usr": "c:@T@CGPDFDocumentRef"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4pdfx15SwiftPdfxPluginC17openAssetDocument4nameSo16CGPDFDocumentRefaSgSS_tF",
+            "mangledName": "$s4pdfx15SwiftPdfxPluginC17openAssetDocument4nameSo16CGPDFDocumentRefaSgSS_tF",
+            "moduleName": "pdfx",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SwiftPdfxPlugin",
+                "printedName": "pdfx.SwiftPdfxPlugin",
+                "usr": "c:@M@pdfx@objc(cs)SwiftPdfxPlugin"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@pdfx@objc(cs)SwiftPdfxPlugin(im)init",
+            "mangledName": "$s4pdfx15SwiftPdfxPluginCACycfc",
+            "moduleName": "pdfx",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@pdfx@objc(cs)SwiftPdfxPlugin",
+        "mangledName": "$s4pdfx15SwiftPdfxPluginC",
+        "moduleName": "pdfx",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PdfRenderError",
+        "printedName": "PdfRenderError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "operationFailed",
+            "printedName": "operationFailed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(pdfx.PdfRenderError.Type) -> (Swift.String) -> pdfx.PdfRenderError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> pdfx.PdfRenderError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PdfRenderError",
+                        "printedName": "pdfx.PdfRenderError",
+                        "usr": "s:4pdfx14PdfRenderErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "pdfx.PdfRenderError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PdfRenderError",
+                        "printedName": "pdfx.PdfRenderError",
+                        "usr": "s:4pdfx14PdfRenderErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:4pdfx14PdfRenderErrorO15operationFailedyACSScACmF",
+            "mangledName": "$s4pdfx14PdfRenderErrorO15operationFailedyACSScACmF",
+            "moduleName": "pdfx",
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "invalidArgument",
+            "printedName": "invalidArgument",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(pdfx.PdfRenderError.Type) -> (Swift.String) -> pdfx.PdfRenderError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> pdfx.PdfRenderError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PdfRenderError",
+                        "printedName": "pdfx.PdfRenderError",
+                        "usr": "s:4pdfx14PdfRenderErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "pdfx.PdfRenderError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PdfRenderError",
+                        "printedName": "pdfx.PdfRenderError",
+                        "usr": "s:4pdfx14PdfRenderErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:4pdfx14PdfRenderErrorO15invalidArgumentyACSScACmF",
+            "mangledName": "$s4pdfx14PdfRenderErrorO15invalidArgumentyACSScACmF",
+            "moduleName": "pdfx",
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "notSupported",
+            "printedName": "notSupported",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(pdfx.PdfRenderError.Type) -> (Swift.String) -> pdfx.PdfRenderError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> pdfx.PdfRenderError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PdfRenderError",
+                        "printedName": "pdfx.PdfRenderError",
+                        "usr": "s:4pdfx14PdfRenderErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "pdfx.PdfRenderError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PdfRenderError",
+                        "printedName": "pdfx.PdfRenderError",
+                        "usr": "s:4pdfx14PdfRenderErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:4pdfx14PdfRenderErrorO12notSupportedyACSScACmF",
+            "mangledName": "$s4pdfx14PdfRenderErrorO12notSupportedyACSScACmF",
+            "moduleName": "pdfx",
+            "fixedbinaryorder": 2
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:4pdfx14PdfRenderErrorO",
+        "mangledName": "$s4pdfx14PdfRenderErrorO",
+        "moduleName": "pdfx",
+        "isEnumExhaustive": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PdfPageTexture",
+        "printedName": "PdfPageTexture",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "pixBuf",
+            "printedName": "pixBuf",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreVideo.CVBuffer?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CVBuffer",
+                    "printedName": "CoreVideo.CVBuffer",
+                    "usr": "c:@T@CVBufferRef"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4pdfx14PdfPageTextureC6pixBufSo11CVBufferRefaSgvp",
+            "mangledName": "$s4pdfx14PdfPageTextureC6pixBufSo11CVBufferRefaSgvp",
+            "moduleName": "pdfx",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 0,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "CoreVideo.CVBuffer?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CVBuffer",
+                        "printedName": "CoreVideo.CVBuffer",
+                        "usr": "c:@T@CVBufferRef"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4pdfx14PdfPageTextureC6pixBufSo11CVBufferRefaSgvg",
+                "mangledName": "$s4pdfx14PdfPageTextureC6pixBufSo11CVBufferRefaSgvg",
+                "moduleName": "pdfx",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "CoreVideo.CVBuffer?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CVBuffer",
+                        "printedName": "CoreVideo.CVBuffer",
+                        "usr": "c:@T@CVBufferRef"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4pdfx14PdfPageTextureC6pixBufSo11CVBufferRefaSgvs",
+                "mangledName": "$s4pdfx14PdfPageTextureC6pixBufSo11CVBufferRefaSgvs",
+                "moduleName": "pdfx",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4pdfx14PdfPageTextureC6pixBufSo11CVBufferRefaSgvM",
+                "mangledName": "$s4pdfx14PdfPageTextureC6pixBufSo11CVBufferRefaSgvM",
+                "moduleName": "pdfx",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "registrar",
+            "printedName": "registrar",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "(any Flutter.FlutterPluginRegistrar)?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4pdfx14PdfPageTextureC9registrarSo22FlutterPluginRegistrar_pSgvp",
+            "mangledName": "$s4pdfx14PdfPageTextureC9registrarSo22FlutterPluginRegistrar_pSgvp",
+            "moduleName": "pdfx",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "ReferenceOwnership"
+            ],
+            "fixedbinaryorder": 1,
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any Flutter.FlutterPluginRegistrar)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FlutterPluginRegistrar",
+                        "printedName": "any Flutter.FlutterPluginRegistrar",
+                        "usr": "c:objc(pl)FlutterPluginRegistrar"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4pdfx14PdfPageTextureC9registrarSo22FlutterPluginRegistrar_pSgvg",
+                "mangledName": "$s4pdfx14PdfPageTextureC9registrarSo22FlutterPluginRegistrar_pSgvg",
+                "moduleName": "pdfx",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any Flutter.FlutterPluginRegistrar)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FlutterPluginRegistrar",
+                        "printedName": "any Flutter.FlutterPluginRegistrar",
+                        "usr": "c:objc(pl)FlutterPluginRegistrar"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4pdfx14PdfPageTextureC9registrarSo22FlutterPluginRegistrar_pSgvs",
+                "mangledName": "$s4pdfx14PdfPageTextureC9registrarSo22FlutterPluginRegistrar_pSgvs",
+                "moduleName": "pdfx",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4pdfx14PdfPageTextureC9registrarSo22FlutterPluginRegistrar_pSgvM",
+                "mangledName": "$s4pdfx14PdfPageTextureC9registrarSo22FlutterPluginRegistrar_pSgvM",
+                "moduleName": "pdfx",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "texId",
+            "printedName": "texId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int64",
+                "printedName": "Swift.Int64",
+                "usr": "s:s5Int64V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4pdfx14PdfPageTextureC5texIds5Int64Vvp",
+            "mangledName": "$s4pdfx14PdfPageTextureC5texIds5Int64Vvp",
+            "moduleName": "pdfx",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 2,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int64",
+                    "printedName": "Swift.Int64",
+                    "usr": "s:s5Int64V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4pdfx14PdfPageTextureC5texIds5Int64Vvg",
+                "mangledName": "$s4pdfx14PdfPageTextureC5texIds5Int64Vvg",
+                "moduleName": "pdfx",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int64",
+                    "printedName": "Swift.Int64",
+                    "usr": "s:s5Int64V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4pdfx14PdfPageTextureC5texIds5Int64Vvs",
+                "mangledName": "$s4pdfx14PdfPageTextureC5texIds5Int64Vvs",
+                "moduleName": "pdfx",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4pdfx14PdfPageTextureC5texIds5Int64VvM",
+                "mangledName": "$s4pdfx14PdfPageTextureC5texIds5Int64VvM",
+                "moduleName": "pdfx",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "texWidth",
+            "printedName": "texWidth",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4pdfx14PdfPageTextureC8texWidthSivp",
+            "mangledName": "$s4pdfx14PdfPageTextureC8texWidthSivp",
+            "moduleName": "pdfx",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 3,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4pdfx14PdfPageTextureC8texWidthSivg",
+                "mangledName": "$s4pdfx14PdfPageTextureC8texWidthSivg",
+                "moduleName": "pdfx",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4pdfx14PdfPageTextureC8texWidthSivs",
+                "mangledName": "$s4pdfx14PdfPageTextureC8texWidthSivs",
+                "moduleName": "pdfx",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4pdfx14PdfPageTextureC8texWidthSivM",
+                "mangledName": "$s4pdfx14PdfPageTextureC8texWidthSivM",
+                "moduleName": "pdfx",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "texHeight",
+            "printedName": "texHeight",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4pdfx14PdfPageTextureC9texHeightSivp",
+            "mangledName": "$s4pdfx14PdfPageTextureC9texHeightSivp",
+            "moduleName": "pdfx",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 4,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4pdfx14PdfPageTextureC9texHeightSivg",
+                "mangledName": "$s4pdfx14PdfPageTextureC9texHeightSivg",
+                "moduleName": "pdfx",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4pdfx14PdfPageTextureC9texHeightSivs",
+                "mangledName": "$s4pdfx14PdfPageTextureC9texHeightSivs",
+                "moduleName": "pdfx",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4pdfx14PdfPageTextureC9texHeightSivM",
+                "mangledName": "$s4pdfx14PdfPageTextureC9texHeightSivM",
+                "moduleName": "pdfx",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(registrar:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PdfPageTexture",
+                "printedName": "pdfx.PdfPageTexture",
+                "usr": "c:@M@pdfx@objc(cs)PdfPageTexture"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any Flutter.FlutterPluginRegistrar)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FlutterPluginRegistrar",
+                    "printedName": "any Flutter.FlutterPluginRegistrar",
+                    "usr": "c:objc(pl)FlutterPluginRegistrar"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:4pdfx14PdfPageTextureC9registrarACSo22FlutterPluginRegistrar_pSg_tcfc",
+            "mangledName": "$s4pdfx14PdfPageTextureC9registrarACSo22FlutterPluginRegistrar_pSg_tcfc",
+            "moduleName": "pdfx",
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "resize",
+            "printedName": "resize(width:height:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4pdfx14PdfPageTextureC6resize5width6heightySi_SitF",
+            "mangledName": "$s4pdfx14PdfPageTextureC6resize5width6heightySi_SitF",
+            "moduleName": "pdfx",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updateTex",
+            "printedName": "updateTex(page:destX:destY:width:height:srcX:srcY:fullWidth:fullHeight:backgroundColor:allowAntialiasing:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGPDFPage",
+                "printedName": "CoreGraphics.CGPDFPage",
+                "usr": "c:@T@CGPDFPageRef"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Double?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Double?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4pdfx14PdfPageTextureC9updateTex4page5destX0H1Y5width6height4srcX0K1Y9fullWidth0L6Height15backgroundColor17allowAntialiasingySo12CGPDFPageRefa_S6iSdSgARSSSgSbtKF",
+            "mangledName": "$s4pdfx14PdfPageTextureC9updateTex4page5destX0H1Y5width6height4srcX0K1Y9fullWidth0L6Height15backgroundColor17allowAntialiasingySo12CGPDFPageRefa_S6iSdSgARSSSgSbtKF",
+            "moduleName": "pdfx",
+            "isOpen": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PdfPageTexture",
+                "printedName": "pdfx.PdfPageTexture",
+                "usr": "c:@M@pdfx@objc(cs)PdfPageTexture"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@pdfx@objc(cs)PdfPageTexture(im)init",
+            "mangledName": "$s4pdfx14PdfPageTextureCACycfc",
+            "moduleName": "pdfx",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "copyPixelBuffer",
+            "printedName": "copyPixelBuffer()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Unmanaged<CoreVideo.CVBuffer>?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Unmanaged",
+                    "printedName": "Swift.Unmanaged<CoreVideo.CVBuffer>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CVBuffer",
+                        "printedName": "CoreVideo.CVBuffer",
+                        "usr": "c:@T@CVBufferRef"
+                      }
+                    ],
+                    "usr": "s:s9UnmanagedV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@pdfx@objc(cs)PdfPageTexture(im)copyPixelBuffer",
+            "mangledName": "$s4pdfx14PdfPageTextureC15copyPixelBuffers9UnmanagedVySo11CVBufferRefaGSgyF",
+            "moduleName": "pdfx",
+            "isOpen": true,
+            "objc_name": "copyPixelBuffer",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@pdfx@objc(cs)PdfPageTexture",
+        "mangledName": "$s4pdfx14PdfPageTextureC",
+        "moduleName": "pdfx",
+        "isOpen": true,
+        "declAttributes": [
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UIColor",
+        "printedName": "UIColor",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(hexString:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:So7UIColorC4pdfxE9hexStringABSS_tcfc",
+            "mangledName": "$sSo7UIColorC4pdfxE9hexStringABSS_tcfc",
+            "moduleName": "pdfx",
+            "declAttributes": [
+              "Convenience"
+            ],
+            "isFromExtension": true,
+            "init_kind": "Convenience"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)UIColor",
+        "moduleName": "UIKit",
+        "isOpen": true,
+        "intro_iOS": "2.0",
+        "objc_name": "UIColor",
+        "declAttributes": [
+          "Available",
+          "ObjC",
+          "SynthesizedProtocol",
+          "NonSendable",
+          "Sendable",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ExpressibleByColorLiteral",
+            "printedName": "_ExpressibleByColorLiteral",
+            "usr": "s:s26_ExpressibleByColorLiteralP",
+            "mangledName": "$ss26_ExpressibleByColorLiteralP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CGPDFPage",
+        "printedName": "CGPDFPage",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "getRotatedSize",
+            "printedName": "getRotatedSize()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGSize",
+                "printedName": "CoreFoundation.CGSize",
+                "usr": "c:@S@CGSize"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So12CGPDFPageRefa4pdfxE14getRotatedSizeSo6CGSizeVyF",
+            "mangledName": "$sSo12CGPDFPageRefa4pdfxE14getRotatedSizeSo6CGSizeVyF",
+            "moduleName": "pdfx",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getRotationTransform",
+            "printedName": "getRotationTransform()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGAffineTransform",
+                "printedName": "CoreFoundation.CGAffineTransform",
+                "usr": "c:@S@CGAffineTransform"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So12CGPDFPageRefa4pdfxE20getRotationTransformSo08CGAffineF0VyF",
+            "mangledName": "$sSo12CGPDFPageRefa4pdfxE20getRotationTransformSo08CGAffineF0VyF",
+            "moduleName": "pdfx",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@T@CGPDFPageRef",
+        "moduleName": "CoreGraphics",
+        "declAttributes": [
+          "SynthesizedProtocol",
+          "ObjC",
+          "Dynamic"
+        ],
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_CFObject",
+            "printedName": "_CFObject",
+            "usr": "s:14CoreFoundation9_CFObjectP",
+            "mangledName": "$s14CoreFoundation9_CFObjectP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/dansoong\/.pub-cache\/hosted\/pub.dev\/pdfx-2.8.0\/ios\/Classes\/Document.swift",
+      "kind": "StringLiteral",
+      "offset": 1592,
+      "length": 9,
+      "value": "\"#ffffff\""
+    },
+    {
+      "filePath": "\/Users\/dansoong\/.pub-cache\/hosted\/pub.dev\/pdfx-2.8.0\/ios\/Classes\/Document.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7791,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/dansoong\/.pub-cache\/hosted\/pub.dev\/pdfx-2.8.0\/ios\/Classes\/Document.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7809,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/dansoong\/.pub-cache\/hosted\/pub.dev\/pdfx-2.8.0\/ios\/Classes\/Resources.swift",
+      "kind": "Dictionary",
+      "offset": 111,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/dansoong\/.pub-cache\/hosted\/pub.dev\/pdfx-2.8.0\/ios\/Classes\/SwiftPdfxPlugin.swift",
+      "kind": "IntegerLiteral",
+      "offset": 278,
+      "length": 2,
+      "value": "-1"
+    },
+    {
+      "filePath": "\/Users\/dansoong\/.pub-cache\/hosted\/pub.dev\/pdfx-2.8.0\/ios\/Classes\/SwiftPdfxPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 324,
+      "length": 22,
+      "value": "\"io.scer.pdf_renderer\""
+    },
+    {
+      "filePath": "\/Users\/dansoong\/.pub-cache\/hosted\/pub.dev\/pdfx-2.8.0\/ios\/Classes\/SwiftPdfxPlugin.swift",
+      "kind": "Dictionary",
+      "offset": 471,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/dansoong\/.pub-cache\/hosted\/pub.dev\/pdfx-2.8.0\/ios\/Classes\/SwiftPdfxPlugin.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12148,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/dansoong\/.pub-cache\/hosted\/pub.dev\/pdfx-2.8.0\/ios\/Classes\/SwiftPdfxPlugin.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12173,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/dansoong\/.pub-cache\/hosted\/pub.dev\/pdfx-2.8.0\/ios\/Classes\/SwiftPdfxPlugin.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12199,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/dansoong\/.pub-cache\/hosted\/pub.dev\/pdfx-2.8.0\/ios\/Classes\/SwiftPdfxPlugin.swift",
+      "kind": "BooleanLiteral",
+      "offset": 12730,
+      "length": 4,
+      "value": "true"
+    }
+  ]
+}

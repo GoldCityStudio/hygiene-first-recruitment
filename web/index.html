@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    Alternatively, build your application passing the --base-href parameter
+    specifying the new root path of your web app.
+
+    Fore more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+  -->
+  <base href="$FLUTTER_BASE_HREF">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Hygiene First">
+
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function(event) {
+
+var preLoader = document.createElement("div");
+
+preLoader.innerHTML = "Loading...";
+
+preLoader.style.position = "fixed";
+
+preLoader.style.top = "50%";
+
+preLoader.style.left = "50%";
+
+preLoader.style.transform = "translate(-50%, -50%)";
+
+preLoader.style.fontSize = "24px";
+
+preLoader.style.color = "black";
+
+preLoader.style.fontFamily = "'Plus Jakarta Sans', sans-serif"; // Using the Google Font
+
+document.body.appendChild(preLoader);
+
+// Assuming the Flutter app will remove this or cover it when loaded
+
+});
+
+</script>
+
+  <meta name="robots" content="noindex" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="play_store_512.png" sizes="any"/>
+  
+
+  <!-- Open Graph & SEO tags -->
+  <meta property="og:title" content="JobConnect Zambia" />
+  <meta property="og:description" content="
+JobConnect is a comprehensive job search and recruitment platform designed to bridge the gap between job seekers and employers. It offers a user-friendly interface that enables individuals to explore a wide range of job opportunities across various industries and locations." />
+  <meta property="og:image" content="/assets/assets/images/play_store_512.png" /> 
+  <meta name="twitter:title" content="JobConnect Zambia" />
+  <meta name="twitter:description" content="
+JobConnect is a comprehensive job search and recruitment platform designed to bridge the gap between job seekers and employers. It offers a user-friendly interface that enables individuals to explore a wide range of job opportunities across various industries and locations." />
+  <meta name="twitter:image" content="/assets/assets/images/play_store_512.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <title> JobConnect Zambia </title>
+  <meta name="description" content="
+JobConnect is a comprehensive job search and recruitment platform designed to bridge the gap between job seekers and employers. It offers a user-friendly interface that enables individuals to explore a wide range of job opportunities across various industries and locations." />
+    
+
+  <!-- Status Bar color in Safari browser (iOS) and PWA -->
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ed8747">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)"  content="#4e436d">
+
+  <link rel="manifest" href="manifest.json">
+  
+</head>
+<body>
+  
+  
+    <script src='https://cdn.jsdelivr.net/npm/pdfjs-dist@4.6.82/build/pdf.min.mjs' type='module'></script>
+  <script type='module'>
+  var { pdfjsLib } = globalThis;
+  pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdn.jsdelivr.net/npm/pdfjs-dist@4.6.82/build/pdf.worker.mjs';
+
+  var pdfRenderOptions = {
+    cMapUrl: 'https://cdn.jsdelivr.net/npm/pdfjs-dist@4.6.82/cmaps/',
+    cMapPacked: true,
+  }
+  </script>
+        
+  
+  
+  <script>
+    {{flutter_bootstrap_js}}
+  </script>
+
+  <script>
+    // Add mouse event handling
+    document.addEventListener('mousemove', function(e) {
+      if (window.flutterWebRenderer) {
+        window.flutterWebRenderer.dispatchPointerDataPacket({
+          data: new Uint8Array([
+            1, // type
+            0, // buttons
+            e.clientX, e.clientY, // coordinates
+            0, // pressure
+            0, // distance
+            0, // size
+            0, // radius major
+            0, // radius minor
+            0, // radius min
+            0, // radius max
+            0, // orientation
+            0, // tilt
+            0, // id
+            0, // kind
+            0, // synthesized
+          ])
+        });
+      }
+    });
+  </script>
+</body>
+</html>

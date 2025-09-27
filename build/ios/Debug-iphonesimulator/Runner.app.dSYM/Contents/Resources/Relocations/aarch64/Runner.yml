@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/dansoong/Desktop/hygiene_first_recruitment/build/ios/Debug-iphonesimulator/Runner.app/Runner'
+relocations:     []
+...
