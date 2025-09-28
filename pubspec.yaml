@@ -189,7 +189,7 @@ flutter_launcher_icons:
   remove_alpha_ios: true
   web:
     generate: true
-  image_path: 'assets/images/app_launcher_icon.png'
+  image_path: 'assets/images/hygienelogo.png'
 
 
 # For information on the generic Dart part of this file, see the
