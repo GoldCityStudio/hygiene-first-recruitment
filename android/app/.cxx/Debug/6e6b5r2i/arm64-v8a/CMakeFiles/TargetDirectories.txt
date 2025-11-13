@@ -1,0 +1,2 @@
+/Users/dansoong/Desktop/hygiene_first_recruitment/android/app/.cxx/Debug/6e6b5r2i/arm64-v8a/CMakeFiles/edit_cache.dir
+/Users/dansoong/Desktop/hygiene_first_recruitment/android/app/.cxx/Debug/6e6b5r2i/arm64-v8a/CMakeFiles/rebuild_cache.dir

@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
-	<string>Hygiene First</string>
+	<string>HFG</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -40,7 +40,7 @@
         <string>hygiene_first_recruitment</string>
         <key>CFBundleURLSchemes</key>
         <array>
-        <string>com.mycompany.jobconnect</string>
+        <string>com.hygienefirst.recruitment</string>
         </array>
         </dict>
     </array>

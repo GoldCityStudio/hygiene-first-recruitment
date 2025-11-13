@@ -1505,7 +1505,7 @@ class _PostJobWidgetState extends State<PostJobWidget> {
     }
     if (salary.contains('以上')) {
       final value = double.tryParse(salary.replaceAll('以上', '')) ?? 0.0;
-      return isMaximum ? double.infinity : value;
+      return isMaximum ? 999999.0 : value; // Use a large finite number instead of infinity
     }
 
     // Handle ranges (e.g., "25000-30000")

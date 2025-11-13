@@ -1,0 +1,2 @@
+/Users/dansoong/Desktop/hygiene_first_recruitment/android/app/.cxx/RelWithDebInfo/60b1f1l4/armeabi-v7a/CMakeFiles/edit_cache.dir
+/Users/dansoong/Desktop/hygiene_first_recruitment/android/app/.cxx/RelWithDebInfo/60b1f1l4/armeabi-v7a/CMakeFiles/rebuild_cache.dir
