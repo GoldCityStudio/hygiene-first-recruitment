@@ -69,29 +69,38 @@ class _OnboardingWidgetState extends State<OnboardingWidget>
         }
       }
 
+      // Wait for PageView to be built before using PageController
+      await Future.delayed(const Duration(milliseconds: 100));
+      
       while (true == true) {
         logFirebaseEvent('onboarding_wait__delay');
         await Future.delayed(const Duration(milliseconds: 5000));
         logFirebaseEvent('onboarding_page_view');
-        await _model.pageViewController?.nextPage(
-          duration: Duration(milliseconds: 300),
-          curve: Curves.ease,
-        );
+        if (_model.pageViewController?.hasClients ?? false) {
+          await _model.pageViewController?.nextPage(
+            duration: Duration(milliseconds: 300),
+            curve: Curves.ease,
+          );
+        }
         logFirebaseEvent('onboarding_wait__delay');
         await Future.delayed(const Duration(milliseconds: 5000));
         logFirebaseEvent('onboarding_page_view');
-        await _model.pageViewController?.nextPage(
-          duration: Duration(milliseconds: 300),
-          curve: Curves.ease,
-        );
+        if (_model.pageViewController?.hasClients ?? false) {
+          await _model.pageViewController?.nextPage(
+            duration: Duration(milliseconds: 300),
+            curve: Curves.ease,
+          );
+        }
         logFirebaseEvent('onboarding_wait__delay');
         await Future.delayed(const Duration(milliseconds: 5000));
         logFirebaseEvent('onboarding_page_view');
-        await _model.pageViewController?.animateToPage(
-          0,
-          duration: Duration(milliseconds: 500),
-          curve: Curves.ease,
-        );
+        if (_model.pageViewController?.hasClients ?? false) {
+          await _model.pageViewController?.animateToPage(
+            0,
+            duration: Duration(milliseconds: 500),
+            curve: Curves.ease,
+          );
+        }
       }
     });
 
@@ -127,9 +136,17 @@ class _OnboardingWidgetState extends State<OnboardingWidget>
 
   @override
   Widget build(BuildContext context) {
+    // Create a background with 85% primary color and 15% white
+    final primaryColor = FlutterFlowTheme.of(context).primary;
+    final lighterPrimary = Color.lerp(
+      Colors.white,
+      primaryColor,
+      0.85, // 85% of primary color, 15% white
+    ) ?? primaryColor.withOpacity(0.85);
+    
     return Scaffold(
       key: scaffoldKey,
-      backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
+      backgroundColor: lighterPrimary,
       body: SafeArea(
         top: true,
         child: Column(
@@ -146,7 +163,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget>
                     width: MediaQuery.sizeOf(context).width * 1.0,
                     height: 80.0,
                     decoration: BoxDecoration(
-                      color: FlutterFlowTheme.of(context).secondaryBackground,
+                      color: lighterPrimary,
                     ),
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
@@ -189,8 +206,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget>
                               width: 100.0,
                               height: 100.0,
                               decoration: BoxDecoration(
-                                color: FlutterFlowTheme.of(context)
-                                    .secondaryBackground,
+                                color: lighterPrimary,
                               ),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
@@ -208,24 +224,33 @@ class _OnboardingWidgetState extends State<OnboardingWidget>
                                             MediaQuery.sizeOf(context).height *
                                                 0.45,
                                         decoration: BoxDecoration(
-                                          color: FlutterFlowTheme.of(context)
-                                              .secondaryBackground,
+                                          color: lighterPrimary,
                                         ),
                                         child: Padding(
                                           padding: EdgeInsets.all(8.0),
-                                          child: SvgPicture.asset(
-                                            'assets/images/test.svg',
-                                            width: MediaQuery.sizeOf(context).width * 0.9,
-                                            height: MediaQuery.sizeOf(context).height * 1.0,
+                                          child: Image.asset(
+                                            'assets/images/onboarding/1.png',
+                                            width: MediaQuery.sizeOf(context).width * 0.5,
+                                            height: MediaQuery.sizeOf(context).height * 0.25,
                                             fit: BoxFit.contain,
-                                            placeholderBuilder: (BuildContext context) => Container(
-                                              width: MediaQuery.sizeOf(context).width * 0.9,
-                                              height: MediaQuery.sizeOf(context).height * 1.0,
-                                              color: Colors.grey[200],
-                                              child: Center(
-                                                child: CircularProgressIndicator(),
-                                              ),
-                                            ),
+                                            errorBuilder: (BuildContext context, Object error, StackTrace? stackTrace) {
+                                              print('Error loading image 1: $error');
+                                              return Container(
+                                                width: MediaQuery.sizeOf(context).width * 0.5,
+                                                height: MediaQuery.sizeOf(context).height * 0.25,
+                                                color: Colors.grey[200],
+                                                child: Center(
+                                                  child: Column(
+                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                    children: [
+                                                      Icon(Icons.error, size: 48),
+                                                      SizedBox(height: 8),
+                                                      Text('Error loading image'),
+                                                    ],
+                                                  ),
+                                                ),
+                                              );
+                                            },
                                           ).animate()
                                             .fadeIn(duration: 600.ms)
                                             .slideX(begin: 0.2, end: 0, duration: 600.ms)
@@ -286,8 +311,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget>
                               width: 100.0,
                               height: 100.0,
                               decoration: BoxDecoration(
-                                color: FlutterFlowTheme.of(context)
-                                    .secondaryBackground,
+                                color: lighterPrimary,
                               ),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
@@ -307,15 +331,25 @@ class _OnboardingWidgetState extends State<OnboardingWidget>
                                         decoration: BoxDecoration(),
                                         child: Padding(
                                           padding: EdgeInsets.all(16.0),
-                                          child: SvgPicture.asset(
-                                            'assets/images/healthcare_matching.svg',
+                                          child: Image.asset(
+                                            'assets/images/onboarding/2.png',
                                             width: MediaQuery.sizeOf(context)
                                                     .width *
-                                                1.0,
+                                                0.3,
                                             height: MediaQuery.sizeOf(context)
                                                     .height *
-                                                1.0,
+                                                0.3,
                                             fit: BoxFit.contain,
+                                            errorBuilder: (BuildContext context, Object error, StackTrace? stackTrace) {
+                                              return Container(
+                                                width: MediaQuery.sizeOf(context).width * 0.3,
+                                                height: MediaQuery.sizeOf(context).height * 0.3,
+                                                color: Colors.grey[200],
+                                                child: Center(
+                                                  child: Icon(Icons.error),
+                                                ),
+                                              );
+                                            },
                                           ).animate()
                                             .fadeIn(duration: 600.ms)
                                             .slideX(begin: 0.2, end: 0, duration: 600.ms)
@@ -376,8 +410,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget>
                               width: 100.0,
                               height: 100.0,
                               decoration: BoxDecoration(
-                                color: FlutterFlowTheme.of(context)
-                                    .secondaryBackground,
+                                color: lighterPrimary,
                               ),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
@@ -397,15 +430,123 @@ class _OnboardingWidgetState extends State<OnboardingWidget>
                                         decoration: BoxDecoration(),
                                         child: Padding(
                                           padding: EdgeInsets.all(20.0),
-                                          child: SvgPicture.asset(
-                                            'assets/images/healthcare_profile.svg',
+                                          child: Image.asset(
+                                            'assets/images/onboarding/3.png',
                                             width: MediaQuery.sizeOf(context)
                                                     .width *
-                                                1.0,
+                                                0.3,
                                             height: MediaQuery.sizeOf(context)
                                                     .height *
-                                                1.0,
+                                                0.3,
                                             fit: BoxFit.contain,
+                                            errorBuilder: (BuildContext context, Object error, StackTrace? stackTrace) {
+                                              return Container(
+                                                width: MediaQuery.sizeOf(context).width * 0.3,
+                                                height: MediaQuery.sizeOf(context).height * 0.3,
+                                                color: Colors.grey[200],
+                                                child: Center(
+                                                  child: Icon(Icons.error),
+                                                ),
+                                              );
+                                            },
+                                          ).animate()
+                                            .fadeIn(duration: 600.ms)
+                                            .slideX(begin: 0.2, end: 0, duration: 600.ms)
+                                            .scale(begin: const Offset(0.8, 0.8), end: const Offset(1, 1), duration: 600.ms),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        20.0, 8.0, 20.0, 4.0),
+                                    child: Row(
+                                      mainAxisSize: MainAxisSize.max,
+                                      children: [
+                                        Expanded(
+                                          child: Text(
+                                            '追蹤申請進度',
+                                            textAlign: TextAlign.center,
+                                            style: FlutterFlowTheme.of(context)
+                                                .headlineMedium
+                                                .override(
+                                                  fontFamily: 'Montserrat',
+                                                  fontSize: 26.0,
+                                                  letterSpacing: 0.0,
+                                                  fontWeight: FontWeight.w500,
+                                                ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        20.0, 4.0, 20.0, 0.0),
+                                    child: Row(
+                                      mainAxisSize: MainAxisSize.max,
+                                      children: [
+                                        Expanded(
+                                          child: Text(
+                                            '隨時查看您的申請狀態，接收即時通知，掌握每個職位機會的最新進展',
+                                            textAlign: TextAlign.center,
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyMedium
+                                                .override(
+                                                  fontFamily: 'Montserrat',
+                                                  fontSize: 16.0,
+                                                  letterSpacing: 0.0,
+                                                ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),   Container(
+                              width: 100.0,
+                              height: 100.0,
+                              decoration: BoxDecoration(
+                                color: lighterPrimary,
+                              ),
+                              child: Column(
+                                mainAxisSize: MainAxisSize.max,
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                children: [
+                                  Row(
+                                    mainAxisSize: MainAxisSize.max,
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      Container(
+                                        width:
+                                            MediaQuery.sizeOf(context).width *
+                                                1.0,
+                                        height:
+                                            MediaQuery.sizeOf(context).height *
+                                                0.45,
+                                        decoration: BoxDecoration(),
+                                        child: Padding(
+                                          padding: EdgeInsets.all(20.0),
+                                          child: Image.asset(
+                                            'assets/images/onboarding/4.png',
+                                            width: MediaQuery.sizeOf(context)
+                                                    .width *
+                                                0.3,
+                                            height: MediaQuery.sizeOf(context)
+                                                    .height *
+                                                0.3,
+                                            fit: BoxFit.contain,
+                                            errorBuilder: (BuildContext context, Object error, StackTrace? stackTrace) {
+                                              return Container(
+                                                width: MediaQuery.sizeOf(context).width * 0.3,
+                                                height: MediaQuery.sizeOf(context).height * 0.3,
+                                                color: Colors.grey[200],
+                                                child: Center(
+                                                  child: Icon(Icons.error),
+                                                ),
+                                              );
+                                            },
                                           ).animate()
                                             .fadeIn(duration: 600.ms)
                                             .slideX(begin: 0.2, end: 0, duration: 600.ms)
@@ -499,71 +640,76 @@ class _OnboardingWidgetState extends State<OnboardingWidget>
                 ),
               ],
             ),
-            Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(20.0, 16.0, 20.0, 0.0),
-              child: Row(
-                mainAxisSize: MainAxisSize.max,
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Column(
-                    mainAxisSize: MainAxisSize.max,
-                    children: [
-                      Padding(
-                        padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
-                        child: FFButtonWidget(
-                          onPressed: () async {
-                            logFirebaseEvent('ONBOARDING_PAGE__BTN_ON_TAP');
-                            logFirebaseEvent('Button_auth');
-                            GoRouter.of(context).prepareAuthEvent();
-                            final user =
-                                await authManager.signInAnonymously(context);
-                            if (user == null) {
-                              return;
-                            }
-                            logFirebaseEvent('Button_backend_call');
+            Container(
+              color: lighterPrimary,
+              child: Padding(
+                padding: EdgeInsetsDirectional.fromSTEB(20.0, 16.0, 20.0, 0.0),
+                child: Row(
+                  mainAxisSize: MainAxisSize.max,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Column(
+                      mainAxisSize: MainAxisSize.max,
+                      children: [
+                      Visibility(
+                        visible: false,
+                        child: Padding(
+                          padding:
+                              EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
+                          child: FFButtonWidget(
+                            onPressed: () async {
+                              logFirebaseEvent('ONBOARDING_PAGE__BTN_ON_TAP');
+                              logFirebaseEvent('Button_auth');
+                              GoRouter.of(context).prepareAuthEvent();
+                              final user =
+                                  await authManager.signInAnonymously(context);
+                              if (user == null) {
+                                return;
+                              }
+                              logFirebaseEvent('Button_backend_call');
 
-                            await currentUserReference!
-                                .update(createUsersRecordData(
-                              type: 'Guest',
-                            ));
-                            logFirebaseEvent('Button_navigate_to');
+                              await currentUserReference!
+                                  .update(createUsersRecordData(
+                                type: 'Guest',
+                              ));
+                              logFirebaseEvent('Button_navigate_to');
 
-                            context.goNamedAuth(
-                              HomeWidget.routeName,
-                              context.mounted,
-                              extra: <String, dynamic>{
-                                kTransitionInfoKey: TransitionInfo(
-                                  hasTransition: true,
-                                  transitionType:
-                                      PageTransitionType.topToBottom,
-                                ),
-                              },
-                            );
-                          },
-                          text: '查看職位（匿名）',
-                          options: FFButtonOptions(
-                            width: 300.0,
-                            height: 50.0,
-                            padding: EdgeInsetsDirectional.fromSTEB(
-                                0.0, 0.0, 0.0, 0.0),
-                            iconPadding: EdgeInsetsDirectional.fromSTEB(
-                                0.0, 0.0, 0.0, 0.0),
-                            color: FlutterFlowTheme.of(context).primary,
-                            textStyle: FlutterFlowTheme.of(context)
-                                .titleSmall
-                                .override(
-                                  fontFamily: 'Montserrat',
-                                  color: Colors.white,
-                                  fontSize: 14.0,
-                                  letterSpacing: 0.0,
-                                ),
-                            elevation: 0.0,
-                            borderSide: BorderSide(
-                              color: Colors.transparent,
-                              width: 0.0,
+                              context.goNamedAuth(
+                                HomeWidget.routeName,
+                                context.mounted,
+                                extra: <String, dynamic>{
+                                  kTransitionInfoKey: TransitionInfo(
+                                    hasTransition: true,
+                                    transitionType:
+                                        PageTransitionType.topToBottom,
+                                  ),
+                                },
+                              );
+                            },
+                            text: '查看職位（匿名）',
+                            options: FFButtonOptions(
+                              width: 300.0,
+                              height: 50.0,
+                              padding: EdgeInsetsDirectional.fromSTEB(
+                                  0.0, 0.0, 0.0, 0.0),
+                              iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                  0.0, 0.0, 0.0, 0.0),
+                              color: FlutterFlowTheme.of(context).primary,
+                              textStyle: FlutterFlowTheme.of(context)
+                                  .titleSmall
+                                  .override(
+                                    fontFamily: 'Montserrat',
+                                    color: Colors.white,
+                                    fontSize: 14.0,
+                                    letterSpacing: 0.0,
+                                  ),
+                              elevation: 0.0,
+                              borderSide: BorderSide(
+                                color: Colors.transparent,
+                                width: 0.0,
+                              ),
+                              borderRadius: BorderRadius.circular(8.0),
                             ),
-                            borderRadius: BorderRadius.circular(8.0),
                           ),
                         ),
                       ),
@@ -604,6 +750,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget>
                 ],
               ),
             ),
+          ),
           ],
         ),
       ),

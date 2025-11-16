@@ -148,25 +148,18 @@ class _CompanyDashboardWidgetState extends State<CompanyDashboardWidget> {
             children: [
               if (!_isMobile) _buildSidebar(),
               Expanded(
-                child: Column(
-                  mainAxisSize: MainAxisSize.max,
-                  children: [
-                    Expanded(
-                      child: SingleChildScrollView(
-                        child: Padding(
-                          padding: EdgeInsets.all(24),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              _buildWelcomeSection(),
-                              SizedBox(height: 32),
-                              _buildRecentActivity(),
-                            ],
-                          ),
-                        ),
-                      ),
+                child: SingleChildScrollView(
+                  child: Padding(
+                    padding: EdgeInsets.all(24),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        _buildWelcomeSection(),
+                        SizedBox(height: 32),
+                        _buildRecentActivity(),
+                      ],
                     ),
-                  ],
+                  ),
                 ),
               ),
             ],

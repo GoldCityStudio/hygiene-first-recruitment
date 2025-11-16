@@ -78,25 +78,36 @@ class _LoginWidgetState extends State<LoginWidget> {
           bottomRight: Radius.circular(24),
                 ),
               ),
-                child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-          Image.asset(
-            'assets/images/hygienelogo.png',
-            width: isSmallScreen ? 80 : 120,
-            height: isSmallScreen ? 80 : 120,
-            fit: BoxFit.contain,
-          ),
-          SizedBox(height: 16),
-          Text(
-            'Hygiene First',
-            style: FlutterFlowTheme.of(context).headlineLarge.copyWith(
-                  color: Colors.white,
-                  fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                          ],
+                child: SafeArea(
+                  bottom: false,
+                  child: Column(
+                            mainAxisAlignment: MainAxisAlignment.end,
+                            children: [
+            Padding(
+              padding: EdgeInsets.only(bottom: isSmallScreen ? 5 : 10),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Image.asset(
+                    'assets/images/hygienelogo.png',
+                    width: isSmallScreen ? 80 : 120,
+                    height: isSmallScreen ? 80 : 120,
+                    fit: BoxFit.contain,
+                  ),
+                  SizedBox(height: 8),
+                  Text(
+                    'Hygiene First',
+                    style: FlutterFlowTheme.of(context).headlineLarge.copyWith(
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
                         ),
+                  ),
+                ],
+              ),
+            ),
+                            ],
+                          ),
+                ),
     );
   }
 

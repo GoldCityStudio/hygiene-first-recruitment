@@ -395,25 +395,37 @@ class _CreateProfileIndividualWidgetState
                                 });
 
                                 // Show success message
+                                if (mounted) {
                                   ScaffoldMessenger.of(context).showSnackBar(
                                     SnackBar(
                                       content: Text(
                                         '個人資料已成功建立！',
                                         style: TextStyle(
-                                        color: Colors.white,
+                                          color: Colors.white,
+                                        ),
                                       ),
-                                    ),
                                       backgroundColor: FlutterFlowTheme.of(context).success,
                                     ),
                                   );
+                                }
+
+                                // Send email verification (before navigation)
+                                try {
+                                  await authManager.sendEmailVerification();
+                                } catch (e) {
+                                  // Silently fail email verification, don't block navigation
+                                  print('Email verification error: $e');
+                                }
 
                                 // Navigate to home page after short delay
+                                if (mounted) {
                                   await Future.delayed(const Duration(milliseconds: 500));
-                                context.goNamed('HomePage');
-
-                                // Send email verification
-                                  await authManager.sendEmailVerification();
+                                  if (mounted) {
+                                    context.goNamed('home');
+                                  }
+                                }
                               } catch (e) {
+                                if (!mounted) return;
                                 ScaffoldMessenger.of(context).showSnackBar(
                                   SnackBar(
                                     content: Text(

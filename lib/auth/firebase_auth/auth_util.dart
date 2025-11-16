@@ -48,8 +48,21 @@ final authenticatedUserStream = FirebaseAuth.instance
     .switchMap(
       (uid) => uid.isEmpty
           ? Stream.value(null)
-          : UsersRecord.getDocument(UsersRecord.collection.doc(uid))
-              .handleError((_) {}),
+          : UsersRecord.collection.doc(uid).snapshots().map((snapshot) {
+              if (!snapshot.exists || snapshot.data() == null) {
+                return null;
+              }
+              try {
+                return UsersRecord.fromSnapshot(snapshot);
+              } catch (e) {
+                // Document doesn't exist or is invalid, return null
+                print('Error loading user document: $e');
+                return null;
+              }
+            }).handleError((error) {
+              // Handle stream errors gracefully
+              print('Error in authenticatedUserStream: $error');
+            }),
     )
     .map((user) {
   currentUserDocument = user;

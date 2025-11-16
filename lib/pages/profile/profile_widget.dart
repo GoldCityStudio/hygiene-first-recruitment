@@ -11,6 +11,7 @@ import '/backend/schema/users_record.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter/services.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'profile_model.dart';
 export 'profile_model.dart';
 
@@ -36,10 +37,13 @@ class _ProfileWidgetState extends State<ProfileWidget> {
     logFirebaseEvent('screen_view', parameters: {'screen_name': 'profile'});
     SchedulerBinding.instance.addPostFrameCallback((_) async {
       logFirebaseEvent('PROFILE_PAGE_profile_ON_INIT_STATE');
+      // Check if user is a guest
       if (valueOrDefault(currentUserDocument?.type, '') == 'Guest') {
         logFirebaseEvent('profile_navigate_to');
         context.goNamed(GuestWidget.routeName);
       }
+      // Note: If currentUserDocument is null (user hasn't completed profile),
+      // the StreamBuilder will handle redirecting to createProfile page
     });
   }
 
@@ -128,9 +132,20 @@ class _ProfileWidgetState extends State<ProfileWidget> {
       );
     }
 
-    return StreamBuilder<UsersRecord>(
-      stream: UsersRecord.getDocument(currentUserReference!),
+    return StreamBuilder<DocumentSnapshot>(
+      stream: currentUserReference!.snapshots(),
       builder: (context, snapshot) {
+        // Handle loading state
+        if (snapshot.connectionState == ConnectionState.waiting) {
+          return Scaffold(
+            backgroundColor: Colors.white,
+            body: Center(
+              child: CircularProgressIndicator(),
+            ),
+          );
+        }
+
+        // Handle error state
         if (snapshot.hasError) {
           return Scaffold(
             backgroundColor: Colors.white,
@@ -173,16 +188,62 @@ class _ProfileWidgetState extends State<ProfileWidget> {
           );
         }
 
-        if (!snapshot.hasData) {
+        // Handle case where document doesn't exist (user hasn't completed profile)
+        if (!snapshot.hasData || !snapshot.data!.exists || snapshot.data!.data() == null) {
+          // Redirect to create profile page after a short delay
+          WidgetsBinding.instance.addPostFrameCallback((_) {
+            if (mounted) {
+              context.goNamed('createProfile');
+            }
+          });
+          
           return Scaffold(
             backgroundColor: Colors.white,
             body: Center(
-              child: CircularProgressIndicator(),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  CircularProgressIndicator(),
+                  SizedBox(height: 16),
+                  Text(
+                    '正在導向至建立個人資料頁面...',
+                    style: FlutterFlowTheme.of(context).bodyMedium,
+                  ),
+                ],
+              ),
             ),
           );
         }
 
-        final userDoc = snapshot.data!;
+        // Parse the document data
+        UsersRecord userDoc;
+        try {
+          userDoc = UsersRecord.fromSnapshot(snapshot.data!);
+        } catch (e) {
+          // If parsing fails, redirect to create profile
+          WidgetsBinding.instance.addPostFrameCallback((_) {
+            if (mounted) {
+              context.goNamed('createProfile');
+            }
+          });
+          
+          return Scaffold(
+            backgroundColor: Colors.white,
+            body: Center(
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  CircularProgressIndicator(),
+                  SizedBox(height: 16),
+                  Text(
+                    '正在導向至建立個人資料頁面...',
+                    style: FlutterFlowTheme.of(context).bodyMedium,
+                  ),
+                ],
+              ),
+            ),
+          );
+        }
         return Scaffold(
         key: scaffoldKey,
           backgroundColor: Colors.white,

@@ -187,16 +187,22 @@ class _CreateProfileWidgetState extends State<CreateProfileWidget> {
                         
                         if (!mounted) return;
                         
-                      logFirebaseEvent('individualRow_navigate_to');
-                        context.goNamed(
-                        CreateProfileIndividualWidget.routeName,
-                        extra: <String, dynamic>{
-                          kTransitionInfoKey: TransitionInfo(
-                            hasTransition: true,
-                            transitionType: PageTransitionType.rightToLeft,
-                          ),
-                        },
-                      );
+                        logFirebaseEvent('individualRow_navigate_to');
+                        
+                        // Use post-frame callback to ensure safe navigation
+                        WidgetsBinding.instance.addPostFrameCallback((_) {
+                          if (mounted) {
+                            context.goNamed(
+                              CreateProfileIndividualWidget.routeName,
+                              extra: <String, dynamic>{
+                                kTransitionInfoKey: TransitionInfo(
+                                  hasTransition: true,
+                                  transitionType: PageTransitionType.rightToLeft,
+                                ),
+                              },
+                            );
+                          }
+                        });
                       } catch (e) {
                         if (!mounted) return;
                         ScaffoldMessenger.of(context).showSnackBar(
@@ -333,16 +339,22 @@ class _CreateProfileWidgetState extends State<CreateProfileWidget> {
                         
                         if (!mounted) return;
                         
-                      logFirebaseEvent('companyRow_navigate_to');
-                        context.goNamed(
-                          CreateProfileCompanyWidget.routeName,
-                          extra: <String, dynamic>{
-                            kTransitionInfoKey: TransitionInfo(
-                              hasTransition: true,
-                              transitionType: PageTransitionType.rightToLeft,
-                            ),
-                          },
-                        );
+                        logFirebaseEvent('companyRow_navigate_to');
+                        
+                        // Use post-frame callback to ensure safe navigation
+                        WidgetsBinding.instance.addPostFrameCallback((_) {
+                          if (mounted) {
+                            context.goNamed(
+                              CreateProfileCompanyWidget.routeName,
+                              extra: <String, dynamic>{
+                                kTransitionInfoKey: TransitionInfo(
+                                  hasTransition: true,
+                                  transitionType: PageTransitionType.rightToLeft,
+                                ),
+                              },
+                            );
+                          }
+                        });
                       } catch (e) {
                         if (!mounted) return;
                         ScaffoldMessenger.of(context).showSnackBar(

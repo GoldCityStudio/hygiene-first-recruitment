@@ -304,10 +304,15 @@ class _NavBarPageState extends State<NavBarPage> {
       'SavedJobs': SavedJobsWidget(),
       'Profile': ProfileWidget(),
     };
-    final currentIndex = tabs.keys.toList().indexOf(_currentPageName);
+    final tabKeys = tabs.keys.toList();
+    final currentIndex = tabKeys.indexOf(_currentPageName);
+    // Ensure currentIndex is valid (0-3), default to 0 if not found
+    final validIndex = currentIndex >= 0 && currentIndex < tabKeys.length 
+        ? currentIndex 
+        : 0;
     return Scaffold(
       body: IndexedStack(
-        index: currentIndex,
+        index: validIndex,
         children: tabs.values.toList(),
       ),
       bottomNavigationBar: BottomNavigationBar(
@@ -366,8 +371,8 @@ class _NavBarPageState extends State<NavBarPage> {
         unselectedItemColor: FlutterFlowTheme.of(context).secondaryText,
         selectedFontSize: 10,
         unselectedFontSize: 10,
-        onTap: (i) => setState(() => _currentPageName = tabs.keys.toList()[i]),
-        currentIndex: currentIndex,
+        onTap: (i) => setState(() => _currentPageName = tabKeys[i]),
+        currentIndex: validIndex,
         type: BottomNavigationBarType.fixed,
         elevation: 8,
       ),
